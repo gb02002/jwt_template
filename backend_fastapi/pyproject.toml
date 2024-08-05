@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Gleb B. <baburin899@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "*"
+pydantic-settings = "*"
+asyncpg = "*"
+psycopg = "*"
+python-jose = "*"
+python-dotenv = "^1.0.1"
+httpx = "*"
+black = "^24.4.2"
+pytest-asyncio = "*"
+alembic = "*"
+passlib = "*"
+bs4 = "*"
+uvicorn = "^0.30.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+pytest-asyncio = "^0.23.8"
+httpx = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
